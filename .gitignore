@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+
+# Data collected by the logger — don't commit growing/large data files
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment/secrets (if you add API keys later)
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional — some people commit this, some don't)
+.vscode/
