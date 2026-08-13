@@ -55,18 +55,9 @@ Tests cover snapshot loading, incremental update handling (including zero-size r
 updates to non-existent levels), and price-level sorting — the core logic that determines whether
 the book stays accurate under real, messy feed conditions.
 
-## Data logging
 
-While running, the app periodically logs order book snapshots (mid-price, spread, top-of-book
-volume, order book imbalance) to `data/book_snapshots.csv`. This data is being collected to train
-a model that predicts short-horizon mid-price direction (up / down / flat) — a deliberately modest,
-honestly-scoped target rather than exact price prediction, which is not realistically achievable
-at this timescale.
 
 ## Status / next steps
 
 - [x] Live order book reconstruction
 - [x] Unit test coverage for core book logic
-- [x] Feature logging pipeline
-- [ ] Model training + evaluation (in progress, see `notebooks/` once added)
-- [ ] Reconnect/backoff handling for
